@@ -1,0 +1,17 @@
+one\digitalinnovation\beerstock\exception\BeerAlreadyRegisteredException.class
+one\digitalinnovation\beerstock\controller\BeerController.class
+one\digitalinnovation\beerstock\mapper\BeerMapperImpl.class
+one\digitalinnovation\beerstock\dto\QuantityDTO$QuantityDTOBuilder.class
+one\digitalinnovation\beerstock\entity\Beer.class
+one\digitalinnovation\beerstock\dto\QuantityDTO.class
+one\digitalinnovation\beerstock\exception\BeerStockExceededException.class
+one\digitalinnovation\beerstock\exception\BeerNotFoundException.class
+one\digitalinnovation\beerstock\enums\BeerType.class
+one\digitalinnovation\beerstock\controller\BeerControllerDocs.class
+one\digitalinnovation\beerstock\dto\BeerDTO$BeerDTOBuilder.class
+one\digitalinnovation\beerstock\BeerstockApplication.class
+one\digitalinnovation\beerstock\mapper\BeerMapper.class
+one\digitalinnovation\beerstock\config\SwaggerConfig.class
+one\digitalinnovation\beerstock\dto\BeerDTO.class
+one\digitalinnovation\beerstock\repository\BeerRepository.class
+one\digitalinnovation\beerstock\service\BeerService.class

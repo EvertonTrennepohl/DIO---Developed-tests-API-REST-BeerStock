@@ -2,13 +2,12 @@ package one.digitalinnovation.beerstock.mapper;
 
 import javax.annotation.processing.Generated;
 import one.digitalinnovation.beerstock.dto.BeerDTO;
-import one.digitalinnovation.beerstock.dto.BeerDTO.BeerDTOBuilder;
 import one.digitalinnovation.beerstock.entity.Beer;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2022-01-20T15:02:52-0300",
-    comments = "version: 1.3.1.Final, compiler: Eclipse JDT (IDE) 1.4.50.v20210914-1429, environment: Java 17 (Eclipse Adoptium)"
+    date = "2022-01-24T13:00:28-0300",
+    comments = "version: 1.3.1.Final, compiler: javac, environment: Java 14.0.2 (Oracle Corporation)"
 )
 public class BeerMapperImpl implements BeerMapper {
 
@@ -20,12 +19,12 @@ public class BeerMapperImpl implements BeerMapper {
 
         Beer beer = new Beer();
 
-        beer.setBrand( beerDTO.getBrand() );
         beer.setId( beerDTO.getId() );
+        beer.setName( beerDTO.getName() );
+        beer.setBrand( beerDTO.getBrand() );
         if ( beerDTO.getMax() != null ) {
             beer.setMax( beerDTO.getMax() );
         }
-        beer.setName( beerDTO.getName() );
         if ( beerDTO.getQuantity() != null ) {
             beer.setQuantity( beerDTO.getQuantity() );
         }
@@ -40,15 +39,15 @@ public class BeerMapperImpl implements BeerMapper {
             return null;
         }
 
-        BeerDTOBuilder beerDTO = BeerDTO.builder();
+        BeerDTO beerDTO = new BeerDTO();
 
-        beerDTO.brand( beer.getBrand() );
-        beerDTO.id( beer.getId() );
-        beerDTO.max( beer.getMax() );
-        beerDTO.name( beer.getName() );
-        beerDTO.quantity( beer.getQuantity() );
-        beerDTO.type( beer.getType() );
+        beerDTO.setId( beer.getId() );
+        beerDTO.setName( beer.getName() );
+        beerDTO.setBrand( beer.getBrand() );
+        beerDTO.setMax( beer.getMax() );
+        beerDTO.setQuantity( beer.getQuantity() );
+        beerDTO.setType( beer.getType() );
 
-        return beerDTO.build();
+        return beerDTO;
     }
 }
